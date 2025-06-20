@@ -7,7 +7,7 @@ const SolutionsSection = () => {
   const solutions = [
     {
       icon: <Building2 className="h-16 w-16 text-primary" />,
-      title: "Enterprise Solutions",
+      title: "Soluciones Corporativas",
       description: "Soluciones de software robustas y escalables, diseñadas para grandes organizaciones con requisitos complejos y operaciones de alto volumen.",
       features: [
         "Enterprise Resource Planning (ERP)",
@@ -30,8 +30,15 @@ const SolutionsSection = () => {
   ];
 
   const benefits = [
-    
+
   ];
+
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="solutions" className="py-20 bg-white">
@@ -48,7 +55,8 @@ const SolutionsSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {solutions.map((solution, index) => (
             <Card 
-              key={index} 
+              key={index}
+              onClick={scrollToContact}
               className="hover-lift bg-gradient-to-br from-white to-gray-50 border-none shadow-xl group"
             >
               <CardHeader className="text-center pb-6">

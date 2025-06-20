@@ -71,18 +71,7 @@ const HeroSection = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                  <div className="hover-lift bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20">
-                    <div className="text-3xl font-bold text-black mb-2">50+</div>
-                    <div className="text-black/70">Projects Completed</div>
-                  </div>
-                  <div className="hover-lift bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20">
-                    <div className="text-3xl font-bold text-black mb-2">98%</div>
-                    <div className="text-black/70">Client Satisfaction</div>
-                  </div>
-                  <div className="hover-lift bg-white/30 backdrop-blur-md rounded-2xl p-6 shadow-lg border border-white/20">
-                    <div className="text-3xl font-bold text-black mb-2">24/7</div>
-                    <div className="text-black/70">Support Available</div>
-                  </div>
+
                 </div>
               </div>
             </div>
