@@ -20,11 +20,11 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-primary" />
-              <span className="text-xl font-bold text-gradient">DevSolutions</span>
+              <span className="text-xl font-bold text-gradient"> A V I S T E N</span>
             </div>
             <p className="text-gray-300 leading-relaxed">
-              Transforming businesses through innovative software solutions. 
-              We help startups and enterprises build scalable, cutting-edge applications.
+              Transformamos negocios a través de soluciones de software innovadoras.
+              Ayudamos a startups y empresas a crear aplicaciones escalables y de vanguardia.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-200">
@@ -48,7 +48,7 @@ const Footer = () => {
                   onClick={() => scrollToSection('hero')}
                   className="text-gray-300 hover:text-primary transition-colors duration-200"
                 >
-                  Home
+                  Inicio
                 </button>
               </li>
               <li>
@@ -56,7 +56,7 @@ const Footer = () => {
                   onClick={() => scrollToSection('services')}
                   className="text-gray-300 hover:text-primary transition-colors duration-200"
                 >
-                  Services
+                  Servicios
                 </button>
               </li>
               <li>
@@ -64,7 +64,7 @@ const Footer = () => {
                   onClick={() => scrollToSection('solutions')}
                   className="text-gray-300 hover:text-primary transition-colors duration-200"
                 >
-                  Solutions
+                  Soluciones
                 </button>
               </li>
               <li>
@@ -72,7 +72,7 @@ const Footer = () => {
                   onClick={() => scrollToSection('technologies')}
                   className="text-gray-300 hover:text-primary transition-colors duration-200"
                 >
-                  Technologies
+                  Tecnologías
                 </button>
               </li>
             </ul>
@@ -80,20 +80,20 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Nuestros Servicios</h3>
             <ul className="space-y-3 text-gray-300">
-              <li>Custom Software Development</li>
-              <li>Mobile App Development</li>
-              <li>Web Development</li>
-              <li>Cloud Solutions</li>
-              <li>Data Analytics</li>
-              <li>API Integration</li>
+              <li>Landing Pages</li>
+              <li>Desarrollo Web</li>
+              <li>Facturación Electronica</li>
+              <li>Soluciones en la Nube</li>
+              <li>Análisis de Datos</li>
+              <li>Integración de APIs</li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact Info</h3>
+            <h3 className="text-lg font-semibold mb-4">Información de Contacto</h3>
             <div className="space-y-3">
               <div className="flex items-center space-x-3">
                 <Mail className="h-4 w-4 text-primary" />
@@ -117,17 +117,17 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400">
-              © {currentYear} DevSolutions. All rights reserved.
+              © {currentYear} Avisten Solutions. Todos los derechos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-200">
-                Privacy Policy
+
               </a>
               <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-200">
-                Terms of Service
+
               </a>
               <a href="#" className="text-gray-400 hover:text-primary transition-colors duration-200">
-                Cookie Policy
+
               </a>
             </div>
           </div>

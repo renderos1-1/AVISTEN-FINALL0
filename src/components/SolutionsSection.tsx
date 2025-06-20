@@ -8,7 +8,7 @@ const SolutionsSection = () => {
     {
       icon: <Building2 className="h-16 w-16 text-primary" />,
       title: "Enterprise Solutions",
-      description: "Robust, scalable software solutions designed for large organizations with complex requirements and high-volume operations.",
+      description: "Soluciones de software robustas y escalables, diseñadas para grandes organizaciones con requisitos complejos y operaciones de alto volumen.",
       features: [
         "Enterprise Resource Planning (ERP)",
         "Customer Relationship Management (CRM)",
@@ -18,28 +18,19 @@ const SolutionsSection = () => {
     },
     {
       icon: <Rocket className="h-16 w-16 text-accent" />,
-      title: "Startup Solutions",
-      description: "Agile, cost-effective solutions that help startups validate ideas, scale quickly, and compete in dynamic markets.",
+      title: "Transformación Digital",
+      description: "Impulsa tu empresa modernizando procesos análogos con soluciones digitales eficientes, ágiles y orientadas al crecimiento.",
       features: [
-        "MVP Development",
-        "Rapid Prototyping",
-        "Market Validation Tools",
-        "Scalable Architecture"
+        "Automatización de procesos",
+        "Consultoría de digitalización",
+        "Migración a la nube",
+        "Desarrollo de portales web y autoservicio"
       ]
     }
   ];
 
   const benefits = [
-    {
-      icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Expert Team",
-      description: "Our experienced developers and consultants bring deep expertise across industries and technologies."
-    },
-    {
-      icon: <TrendingUp className="h-8 w-8 text-primary" />,
-      title: "Proven Results",
-      description: "Track record of delivering successful projects that drive measurable business growth and efficiency."
-    }
+    
   ];
 
   return (

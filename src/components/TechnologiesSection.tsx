@@ -95,18 +95,9 @@ const TechnologiesSection = () => {
 
         <div className="mt-16 text-center">
           <p className="text-lg text-muted-foreground mb-8">
-            And many more technologies to meet your specific requirements
+            Y muchas más tecnologías para satisfacer tus requisitos específicos.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
-            {["MongoDB", "PostgreSQL", "Redis", "GraphQL", "Microservices", "AI/ML"].map((tech, index) => (
-              <span 
-                key={index}
-                className="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium hover:bg-primary/20 transition-colors duration-300"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
+
         </div>
       </div>
     </section>

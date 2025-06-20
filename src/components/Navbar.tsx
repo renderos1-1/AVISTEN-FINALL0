@@ -100,38 +100,38 @@ const Navbar = () => {
                 onClick={() => scrollToSection('hero')}
                 className="block px-3 py-2 text-black hover:text-black/70 transition-colors duration-200 w-full text-left"
               >
-                Home
+                Inicio
               </button>
               <button
                 onClick={() => scrollToSection('services')}
                 className="block px-3 py-2 text-black hover:text-black/70 transition-colors duration-200 w-full text-left"
               >
-                Services
+                Servicios
               </button>
               <button
                 onClick={() => scrollToSection('solutions')}
                 className="block px-3 py-2 text-black hover:text-black/70 transition-colors duration-200 w-full text-left"
               >
-                Solutions
+                Soluciones
               </button>
               <button
                 onClick={() => scrollToSection('technologies')}
                 className="block px-3 py-2 text-black hover:text-black/70 transition-colors duration-200 w-full text-left"
               >
-                Technologies
+                Tecnologías
               </button>
               <button
                 onClick={() => scrollToSection('contact')}
                 className="block px-3 py-2 text-black hover:text-black/70 transition-colors duration-200 w-full text-left"
               >
-                Contact
+                Contacto
               </button>
               <div className="px-3 py-2">
                 <Button 
                   onClick={() => scrollToSection('contact')}
                   className="bg-black text-white px-6 py-2 rounded-lg font-medium hover:bg-black/80 transition-colors w-full"
                 >
-                  Get Started
+                  Inicia Ahora
                 </Button>
               </div>
             </div>

@@ -73,11 +73,11 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Get In <span className="text-gradient">Touch</span>
+            Ponte  <span className="text-gradient">en Contacto</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your business with custom software solutions? 
-            Let's discuss your project and how we can help you achieve your goals.
+            ¿Listo para transformar tu negocio con soluciones de software a medida?
+            Hablemos sobre los requerimientos de tu proyecto y cómo podemos ayudarte a alcanzar tus objetivos.
           </p>
         </div>
 
@@ -85,9 +85,9 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="bg-white shadow-xl border-none hover-lift">
             <CardHeader>
-              <CardTitle className="text-2xl font-bold">Send us a message</CardTitle>
+              <CardTitle className="text-2xl font-bold">Mandanos un mensaje</CardTitle>
               <CardDescription>
-                Fill out the form below and we'll get back to you as soon as possible.
+                Llena el siguiente formulario y nos pondremos en contacto contigo lo antes posible.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -95,7 +95,7 @@ const ContactSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="name" className="block text-sm font-medium mb-2">
-                      Full Name *
+                      Nombre completo *
                     </label>
                     <Input
                       id="name"
@@ -120,7 +120,7 @@ const ContactSection = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       className="w-full"
-                      placeholder="john@company.com"
+                      placeholder="correo@ejemplo.com"
                     />
                   </div>
                 </div>
@@ -128,7 +128,7 @@ const ContactSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="company" className="block text-sm font-medium mb-2">
-                      Company
+                      Empresa
                     </label>
                     <Input
                       id="company"
@@ -137,12 +137,12 @@ const ContactSection = () => {
                       value={formData.company}
                       onChange={handleInputChange}
                       className="w-full"
-                      placeholder="Your Company"
+                      placeholder="Tu empresa"
                     />
                   </div>
                   <div>
                     <label htmlFor="phone" className="block text-sm font-medium mb-2">
-                      Phone
+                      Teléfono
                     </label>
                     <Input
                       id="phone"
@@ -151,14 +151,14 @@ const ContactSection = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full"
-                      placeholder="+1 (555) 123-4567"
+                      placeholder=""
                     />
                   </div>
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium mb-2">
-                    Project Details *
+                    Detalles de tu proyecto *
                   </label>
                   <Textarea
                     id="message"
@@ -168,7 +168,7 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleInputChange}
                     className="w-full"
-                    placeholder="Tell us about your project requirements, timeline, and any specific technologies you have in mind..."
+                    placeholder="Cuéntanos sobre los requisitos de tu proyecto, el plazo estimado y cualquier tecnología específica que tengas en mente..."
                   />
                 </div>
 
@@ -184,7 +184,7 @@ const ContactSection = () => {
                     </div>
                   ) : (
                     <div className="flex items-center justify-center">
-                      Send Message
+                      Mandar mensaje
                       <Send className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                     </div>
                   )}
@@ -196,7 +196,7 @@ const ContactSection = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+              <h3 className="text-2xl font-bold mb-6">Información de Contacto</h3>
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <a
@@ -223,7 +223,7 @@ const ContactSection = () => {
             <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8">
               <h4 className="text-xl font-bold mb-4 flex items-center">
                 <CheckCircle className="h-6 w-6 text-primary mr-2" />
-                Why Choose Us?
+                ¿Por qué elegirnos?
               </h4>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center">
@@ -232,15 +232,11 @@ const ContactSection = () => {
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  Agile development methodology
+                  Consulta inicial y estimación del proyecto.
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  Dedicated project manager
-                </li>
-                <li className="flex items-center">
-                  <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  Post-launch support and maintenance
+                  Soporte y mantenimiento después del lanzamiento.
                 </li>
               </ul>
             </div>
