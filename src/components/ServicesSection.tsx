@@ -1,7 +1,7 @@
 // src/components/ServicesSection.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Code, Smartphone, Cloud, Database, Globe, Zap, LayoutPanelTop, Receipt } from 'lucide-react';
+import {  Cloud, Database, Globe, Zap, LayoutPanelTop, Receipt } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const ServicesSection = () => {
