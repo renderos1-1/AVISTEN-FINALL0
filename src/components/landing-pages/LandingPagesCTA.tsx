@@ -5,11 +5,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import {
     ArrowRight,
     Globe,
-    Zap,
-    CheckCircle,
-    MessageSquare,
-    Phone,
-    Mail
+    Zap
+
 } from 'lucide-react';
 
 const LandingPagesCTA = () => {
@@ -23,111 +20,18 @@ const LandingPagesCTA = () => {
         window.location.href = '/desarrollo-web';
     };
 
-    const benefits = [
-        "Consulta gratuita y análisis de requerimientos",
-        "Diseño personalizado para tu marca",
-        "Desarrollo con tecnologías modernas",
-        "SEO optimizado desde el inicio",
-        "Diseño responsivo para todos los dispositivos",
-        "Soporte técnico incluido",
-        "Entrega en tiempo récord",
-        "Garantía de satisfacción"
-    ];
 
     return (
         <section className="py-20 bg-gradient-to-br from-primary/5 via-white to-accent/5">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                {/* Main CTA */}
-                <div className="text-center mb-16">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        ¿Listo para crear tu <span className="text-gradient">landing page perfecta?</span>
-                    </h2>
-                    <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
-                        Comienza hoy mismo y dale a tu negocio la presencia digital que se merece. Nuestro equipo está listo para convertir tu visión en realidad.
-                    </p>
 
-                    <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                        <Button
-                            onClick={scrollToContact}
-                            className="btn-gradient text-white px-8 py-4 text-lg font-semibold rounded-xl group"
-                        >
-                            Solicitar Cotización Gratuita
-                            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                        <Button
-                            variant="outline"
-                            className="px-8 py-4 text-lg font-semibold rounded-xl border-2 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-                        >
-                            <MessageSquare className="mr-2 h-5 w-5" />
-                            Hablar con un Experto
-                        </Button>
-                    </div>
 
-                    {/* Quick contact info */}
-                    <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-8 text-muted-foreground">
-                        <div className="flex items-center space-x-2">
-                            <Phone className="h-4 w-4 text-primary" />
-                            <span>+503 1234-5678</span>
-                        </div>
-                        <div className="flex items-center space-x-2">
-                            <Mail className="h-4 w-4 text-primary" />
-                            <span>hello@avisten.com</span>
-                        </div>
-                    </div>
-                </div>
 
-                {/* Benefits grid */}
+
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                    {/* Left side - Benefits list */}
-                    <div>
-                        <h3 className="text-2xl font-bold mb-6">¿Qué incluye nuestro servicio?</h3>
-                        <div className="space-y-3">
-                            {benefits.map((benefit, index) => (
-                                <div key={index} className="flex items-center space-x-3">
-                                    <CheckCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                                    <span className="text-foreground">{benefit}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
 
-                    {/* Right side - Process overview */}
-                    <div className="space-y-6">
-                        <h3 className="text-2xl font-bold mb-6">Proceso simple y transparente</h3>
 
-                        <div className="space-y-4">
-                            <div className="flex items-start space-x-4 p-4 rounded-lg bg-white/80 backdrop-blur-sm border border-primary/10">
-                                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                    <span className="text-primary font-bold text-sm">1</span>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold">Consulta inicial gratuita</h4>
-                                    <p className="text-muted-foreground text-sm">Analizamos tus necesidades y objetivos</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start space-x-4 p-4 rounded-lg bg-white/80 backdrop-blur-sm border border-primary/10">
-                                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                    <span className="text-primary font-bold text-sm">2</span>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold">Diseño y desarrollo</h4>
-                                    <p className="text-muted-foreground text-sm">Creamos tu landing page personalizada</p>
-                                </div>
-                            </div>
-
-                            <div className="flex items-start space-x-4 p-4 rounded-lg bg-white/80 backdrop-blur-sm border border-primary/10">
-                                <div className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                                    <span className="text-primary font-bold text-sm">3</span>
-                                </div>
-                                <div>
-                                    <h4 className="font-semibold">Entrega y lanzamiento</h4>
-                                    <p className="text-muted-foreground text-sm">Tu página lista para convertir visitantes</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 {/* Upgrade to web development */}

@@ -45,29 +45,11 @@ const LandingPagesHero = () => {
                                 Solicitar Cotización
                                 <Zap className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
                             </Button>
-                            <Button
-                                variant="outline"
-                                className="px-8 py-4 text-lg font-semibold rounded-xl border-2 hover:bg-primary hover:text-white hover:border-primary transition-all duration-300"
-                            >
-                                Ver Ejemplos
-                            </Button>
+
                         </div>
 
                         {/* Stats */}
-                        <div className="grid grid-cols-3 gap-8 mt-12 pt-8 border-t border-gray-200">
-                            <div className="text-center">
-                                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                                <div className="text-sm text-muted-foreground">Proyectos Completados</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                                <div className="text-sm text-muted-foreground">Satisfacción del Cliente</div>
-                            </div>
-                            <div className="text-center">
-                                <div className="text-3xl font-bold text-primary mb-2">24h</div>
-                                <div className="text-sm text-muted-foreground">Tiempo de Respuesta</div>
-                            </div>
-                        </div>
+
                     </div>
 
                     {/* Visual Side */}

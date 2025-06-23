@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Mail, Phone, Send, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -50,22 +50,17 @@ const ContactSection = () => {
   const contactInfo = [
     {
       icon: <Mail className="h-6 w-6" />,
-      title: "Email Us",
-      content: "hello@devsolutions.com",
+      title: "Envíanos un correo",
+      content: "hello@avistensolutions.com",
       link: "mailto:hello@devsolutions.com"
     },
     {
       icon: <Phone className="h-6 w-6" />,
-      title: "Call Us",
+      title: "Llámanos",
       content: "+1 (555) 123-4567",
       link: "tel:+15551234567"
     },
-    {
-      icon: <MapPin className="h-6 w-6" />,
-      title: "Visit Us",
-      content: "123 Tech Street, San Francisco, CA 94105",
-      link: "https://maps.google.com"
-    }
+
   ];
 
   return (
@@ -228,7 +223,7 @@ const ContactSection = () => {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>
-                  Free initial consultation and project estimation
+                  Calidad garantizada
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-primary rounded-full mr-3"></div>

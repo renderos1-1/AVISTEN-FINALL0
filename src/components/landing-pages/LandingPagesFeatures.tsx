@@ -3,13 +3,11 @@ import React from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import {
     Smartphone,
-    Zap,
+
     Search,
     Palette,
     Code,
     Globe,
-    Target,
-    BarChart3,
     Shield,
     Clock
 } from 'lucide-react';
@@ -21,31 +19,19 @@ const LandingPagesFeatures = () => {
             title: "Diseño Responsivo",
             description: "Tu landing page se verá perfecta en cualquier dispositivo - móvil, tablet o escritorio. Garantizamos una experiencia óptima para todos tus visitantes."
         },
-        {
-            icon: <Zap className="h-8 w-8 text-primary" />,
-            title: "Carga Ultra Rápida",
-            description: "Utilizamos las tecnologías más modernas y técnicas de optimización para que tu página cargue en menos de 3 segundos, mejorando la experiencia del usuario."
-        },
+
         {
             icon: <Search className="h-8 w-8 text-primary" />,
             title: "SEO Optimizado",
             description: "Implementamos las mejores prácticas de SEO desde el inicio para que tu página aparezca en los primeros resultados de búsqueda de Google."
         },
+
         {
             icon: <Palette className="h-8 w-8 text-primary" />,
-            title: "Diseño Personalizado",
-            description: "Cada landing page es única y diseñada específicamente para tu marca, reflejando tu identidad visual y valores corporativos."
-        },
-        {
-            icon: <Target className="h-8 w-8 text-primary" />,
             title: "Enfoque en Conversiones",
             description: "Diseñamos cada elemento estratégicamente para maximizar las conversiones y conseguir más leads y ventas para tu negocio."
         },
-        {
-            icon: <BarChart3 className="h-8 w-8 text-primary" />,
-            title: "Analytics Integrado",
-            description: "Incluimos herramientas de análisis para que puedas medir el rendimiento de tu página y tomar decisiones basadas en datos reales."
-        }
+
     ];
 
     const whyChooseUs = [

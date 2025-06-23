@@ -12,7 +12,7 @@ const ServicesSection = () => {
       icon: <LayoutPanelTop className="h-12 w-12 text-primary" />,
       title: "Landing Pages",
       description: "Una opción rápida y personalizada para crear paginas web responsivas, integrando UI moderno y atractivo para todas las personas que visiten tu sitio web.",
-      path: "/landing-pages"
+      path: "/landing-pages",
     },
     {
       icon: <Globe className="h-12 w-12 text-primary" />,
