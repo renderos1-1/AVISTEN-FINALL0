@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import {   Globe, Zap, LayoutPanelTop, Receipt } from 'lucide-react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import {Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle} from '@/components/ui/card';
 
 const ServicesSection = () => {
   const navigate = useNavigate();
@@ -54,11 +54,12 @@ const ServicesSection = () => {
             {services.map((service, index) => (
                 <Card
                     key={index}
-                    className="hover-lift bg-white border-none shadow-lg group cursor-pointer"
+                    className="hover-color bg-white border-none shadow-lg group cursor-pointer"
                     onClick={() => handleServiceClick(service.path)}
                 >
                   <CardHeader className="text-center pb-4">
-                    <div className="mx-auto mb-4 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
+                    <div
+                        className="mx-auto mb-4 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
                       {service.icon}
                     </div>
                     <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
@@ -70,6 +71,7 @@ const ServicesSection = () => {
                       {service.description}
                     </CardDescription>
                   </CardContent>
+
                 </Card>
             ))}
           </div>

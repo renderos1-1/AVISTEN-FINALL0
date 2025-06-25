@@ -165,6 +165,15 @@
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
+.hover-color {
+  transition: all 0.3s ease;
+}
+
+.hover-color:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(138, 43, 226, 0.3);
+}
+
 .btn-gradient {
   background: var(--gradient-primary);
   transition: all 0.3s ease;

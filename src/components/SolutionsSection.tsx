@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building2, Rocket, Users, TrendingUp } from 'lucide-react';
+import { Building2, Rocket} from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const SolutionsSection = () => {
@@ -17,7 +17,7 @@ const SolutionsSection = () => {
       ]
     },
     {
-      icon: <Rocket className="h-16 w-16 text-accent" />,
+      icon: <Rocket className="h-16 w-16 text-primary" />,
       title: "Transformación Digital",
       description: "Impulsa tu empresa modernizando procesos análogos con soluciones digitales eficientes, ágiles y orientadas al crecimiento.",
       features: [
