@@ -52,18 +52,7 @@ const ElectronicInvoicingCTA = () => {
 
                 {/* Urgency Section */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                        ¿Tu empresa ya cumple con la <span className="text-gradient">Facturación Electrónica?</span>
-                    </h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-8">
-                        {urgencyReasons.map((reason, index) => (
-                            <div key={index} className="flex items-center space-x-3 text-left p-4 rounded-lg bg-white shadow-sm">
-                                {reason.icon}
-                                <span className="text-muted-foreground">{reason.text}</span>
-                            </div>
-                        ))}
-                    </div>
 
                     <div className="bg-red-50 border border-red-200 rounded-xl p-6 mb-8 max-w-2xl mx-auto">
                         <div className="flex items-center justify-center mb-3">
@@ -72,7 +61,7 @@ const ElectronicInvoicingCTA = () => {
                         </div>
                         <p className="text-red-700">
                             La facturación electrónica es <strong>obligatoria por ley</strong> en El Salvador.
-                            No cumplir puede resultar en multas significativas y problemas legales para tu empresa.
+
                         </p>
                     </div>
 
@@ -85,34 +74,11 @@ const ElectronicInvoicingCTA = () => {
                     </Button>
                 </div>
 
-                {/* Why Choose Us */}
-                <Card className="bg-gradient-to-br from-green-50 to-blue-50 border-none shadow-xl max-w-4xl mx-auto mb-16">
-                    <CardHeader className="text-center pb-6">
-                        <div className="mx-auto mb-4 p-4 rounded-full bg-green-100">
-                            <Building2 className="h-8 w-8 text-green-600" />
-                        </div>
-                        <CardTitle className="text-2xl md:text-3xl font-bold">
-                            ¿Por qué elegir nuestro sistema?
-                        </CardTitle>
-                        <CardDescription className="text-lg">
-                            Somos especialistas en facturación electrónica para El Salvador con años de experiencia
-                            ayudando a empresas a cumplir con la normativa legal de manera eficiente y segura.
-                        </CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {whyChooseUs.map((reason, index) => (
-                                <div key={index} className="flex items-center space-x-3 p-3 rounded-lg bg-white/50">
-                                    <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
-                                    <span className="text-muted-foreground">{reason}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </CardContent>
-                </Card>
+
+
 
                 {/* Related Services */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 ">
                     <Card className="bg-white border-none shadow-lg hover-lift">
                         <CardHeader>
                             <div className="flex items-center space-x-3 mb-3">
@@ -139,30 +105,7 @@ const ElectronicInvoicingCTA = () => {
                         </CardContent>
                     </Card>
 
-                    <Card className="bg-white border-none shadow-lg hover-lift">
-                        <CardHeader>
-                            <div className="flex items-center space-x-3 mb-3">
-                                <Building2 className="h-6 w-6 text-accent" />
-                                <CardTitle className="text-xl font-bold">
-                                    ¿Buscas otras soluciones empresariales?
-                                </CardTitle>
-                            </div>
-                            <CardDescription>
-                                Ofrecemos una amplia gama de servicios digitales incluyendo análisis de datos,
-                                integración de APIs, soluciones en la nube y más para transformar tu empresa.
-                            </CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                            <Button
-                                onClick={() => window.location.href = '/#services'}
-                                variant="outline"
-                                className="w-full border-accent text-accent hover:bg-accent hover:text-white"
-                            >
-                                Ver Todos los Servicios
-                                <ArrowRight className="ml-2 h-4 w-4" />
-                            </Button>
-                        </CardContent>
-                    </Card>
+
                 </div>
 
                 {/* Final message */}
@@ -170,7 +113,7 @@ const ElectronicInvoicingCTA = () => {
                     <p className="text-lg text-muted-foreground">
                         No esperes hasta el último momento.
                         <span className="font-semibold text-green-600"> Implementa la facturación electrónica hoy</span>
-                        y mantén tu empresa en cumplimiento legal.
+
                     </p>
                 </div>
             </div>

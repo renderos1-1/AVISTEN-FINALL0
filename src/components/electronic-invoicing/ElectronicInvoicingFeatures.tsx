@@ -69,7 +69,7 @@ const ElectronicInvoicingFeatures = () => {
                 {/* Main Features */}
                 <div className="text-center mb-16">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                        Facturación Electrónica <span className="text-gradient">Certificada</span>
+                        Facturación Electrónica Certificada
                     </h2>
                     <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                         Cumple con todos los requisitos legales del Ministerio de Hacienda de El Salvador.
@@ -104,7 +104,7 @@ const ElectronicInvoicingFeatures = () => {
                 <div className="bg-gradient-to-br from-gray-50 to-green-50 rounded-3xl p-8 md:p-12 mb-16">
                     <div className="text-center mb-12">
                         <h3 className="text-3xl md:text-4xl font-bold mb-4">
-                            Servicios <span className="text-gradient">adicionales</span>
+                            Servicios adicionales
                         </h3>
                         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                             Además de nuestro sistema completo de facturación, ofrecemos servicios modulares
@@ -133,7 +133,7 @@ const ElectronicInvoicingFeatures = () => {
                 {/* Benefits section */}
                 <div className="text-center">
                     <h3 className="text-2xl md:text-3xl font-bold mb-8">
-                        Beneficios de la <span className="text-gradient">Facturación Electrónica</span>
+                        Beneficios de la Facturación Electrónica
                     </h3>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
