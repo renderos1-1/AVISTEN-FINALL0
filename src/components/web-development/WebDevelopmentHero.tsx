@@ -38,7 +38,7 @@ const WebDevelopmentHero = () => {
                                 onClick={scrollToContact}
                                 className="btn-gradient text-white px-8 py-4 text-lg font-semibold rounded-xl group"
                             >
-                                Iniciar Mi Proyecto
+                                Solicitar Cotización
                                 <Zap className="ml-2 h-5 w-5 group-hover:rotate-12 transition-transform" />
                             </Button>
                         </div>
