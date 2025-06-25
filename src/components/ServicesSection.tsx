@@ -1,7 +1,7 @@
 // src/components/ServicesSection.tsx
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import {  Cloud, Database, Globe, Zap, LayoutPanelTop, Receipt } from 'lucide-react';
+import {   Globe, Zap, LayoutPanelTop, Receipt } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 
 const ServicesSection = () => {
@@ -24,19 +24,7 @@ const ServicesSection = () => {
       icon: <Receipt className="h-12 w-12 text-primary" />,
       title: "Facturación Electrónica",
       description: "Desarrollo de sistemas de facturación e integración de sistema de transmisión para que tu negocio pueda emitir DTEs.",
-      path: "/facturacion-electronica"
-    },
-    {
-      icon: <Cloud className="h-12 w-12 text-primary" />,
-      title: "Soluciones en la Nube",
-      description: "Infraestructura en la nube escalable y servicios de migración para optimizar las operaciones de tu negocio y reducir costos.",
-      path: "/soluciones-nube"
-    },
-    {
-      icon: <Database className="h-12 w-12 text-primary" />,
-      title: "Analisis de Datos",
-      description: "Desarrollo de plataformas ideales para Business Intelligence, que ayudarán a tu empresa en la recopilación, organiazión y analisis de datos.",
-      path: "/analisis-datos"
+      path: "/electronic-invoicing"
     },
     {
       icon: <Zap className="h-12 w-12 text-primary" />,
@@ -62,7 +50,7 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
                 <Card
                     key={index}
