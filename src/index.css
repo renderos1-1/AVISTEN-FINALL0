@@ -47,8 +47,8 @@
 
 
     /* Custom gradient variables */
-    --gradient-primary: linear-gradient(135deg, hsl(350 74% 49%) 0%, hsl(234 95% 30%) 100%);
-    --gradient-secondary: linear-gradient(135deg,  hsl(234 95% 30%) 0%, hsl(350 74% 49%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(630 74% 49%) 0%, hsl(598 95% 30%) 100%);
+    --gradient-secondary: linear-gradient(135deg,  hsl(598 95% 30%) 0%, hsl(630 74% 49%) 100%);
 
   }
 
@@ -90,7 +90,7 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    font-family: 'PingFang MO', system-ui, -apple-system, sans-serif;
   }
 }
 

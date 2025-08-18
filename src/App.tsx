@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import LandingPages from "./pages/LandingPages";
 import WebDevelopment from "./pages/WebDevelopment";
 import ElectronicInvoicing from "./pages/ElectronicInvoicing";
+import ApiIntegration from "./pages/ApiIntegration";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
                     <Route path="/landing-pages" element={<LandingPages />} />
                     <Route path="/desarrollo-web" element={<WebDevelopment />} />
                     <Route path="/electronic-invoicing" element={<ElectronicInvoicing />} />
+                    <Route path="/integracion-apis" element={<ApiIntegration />} />
                     {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
