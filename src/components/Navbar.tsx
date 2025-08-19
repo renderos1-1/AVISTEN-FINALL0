@@ -59,13 +59,13 @@ const Navbar = () => {
   }, [location]);
 
   return (
-      <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
+      <nav className={`fixed top-0 w-full z-[100] transition-all duration-300 ${
           isScrolled
               ? 'bg-white shadow-lg'
               : 'bg-white shadow-lg md:bg-transparent md:shadow-none'
       }`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 w-full">
             <div className="flex items-center space-x-2">
               <Code className="h-8 w-8 text-black" />
               <button
@@ -122,10 +122,11 @@ const Navbar = () => {
             </div>
 
             {/* Mobile menu button */}
-            <div className="md:hidden">
+            <div className="md:hidden relative z-[60]">
               <button
                   onClick={() => setIsOpen(!isOpen)}
-                  className="text-black hover:text-black/70 p-2"
+                  className="text-black hover:text-orange-500 p-2 relative z-[60] bg-white rounded-md border border-gray-300 shadow-sm"
+                  style={{ minWidth: '44px', minHeight: '44px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
               >
                 {isOpen ? <X size={24} /> : <Menu size={24} />}
               </button>

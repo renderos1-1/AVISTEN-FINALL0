@@ -54,20 +54,22 @@ const ServicesSection = () => {
             {services.map((service, index) => (
                 <Card
                     key={index}
-                    className="hover-color bg-white border-none shadow-lg group cursor-pointer"
+                    className="bg-white border-none shadow-lg group cursor-pointer transition-all duration-300 hover:shadow-xl hover:bg-gradient-to-br hover:from-orange-400 hover:to-orange-600 hover:text-white hover:-translate-y-2"
                     onClick={() => handleServiceClick(service.path)}
                 >
                   <CardHeader className="text-center pb-4">
                     <div
-                        className="mx-auto mb-4 p-4 rounded-full bg-primary/10 group-hover:bg-primary/20 transition-colors duration-300">
-                      {service.icon}
+                        className="mx-auto mb-4 p-4 rounded-full bg-primary/10 group-hover:bg-white/20 transition-colors duration-300">
+                      <div className="group-hover:text-white transition-colors duration-300">
+                        {service.icon}
+                      </div>
                     </div>
-                    <CardTitle className="text-xl font-bold group-hover:text-primary transition-colors duration-300">
+                    <CardTitle className="text-xl font-bold group-hover:text-white transition-colors duration-300">
                       {service.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-center text-muted-foreground leading-relaxed">
+                    <CardDescription className="text-center text-muted-foreground leading-relaxed group-hover:text-white/90 transition-colors duration-300">
                       {service.description}
                     </CardDescription>
                   </CardContent>

@@ -70,7 +70,7 @@ const ElectronicInvoicingCTA = () => {
                         className="btn-gradient text-white px-10 py-4 text-xl font-semibold rounded-xl group"
                     >
                         <Shield className="mr-2 h-6 w-6 group-hover:rotate-12 transition-transform" />
-                        Implementar Facturación Electrónica
+                        Cotizar Ahora
                     </Button>
                 </div>
 

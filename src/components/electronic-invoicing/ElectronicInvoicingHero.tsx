@@ -10,7 +10,7 @@ const ElectronicInvoicingHero = () => {
     };
 
     return (
-        <section id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-white via-gray-50 to-green-50 relative overflow-hidden pt-16">
+        <section id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-white via-gray-50 to-green-50 relative overflow-hidden pt-24 md:pt-16">
             {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float"></div>

@@ -10,7 +10,7 @@ const LandingPagesHero = () => {
     };
 
     return (
-        <section id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-white via-gray-50 to-blue-50 relative overflow-hidden pt-24 md:pt-16">
+        <section id="hero" className="min-h-screen flex items-center bg-gradient-to-br from-white via-gray-50 to-gray-100 relative overflow-hidden pt-24 md:pt-16 w-full">
             {/* Background decorative elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-20 left-10 w-20 h-20 bg-primary/10 rounded-full animate-float"></div>
@@ -19,21 +19,21 @@ const LandingPagesHero = () => {
                 <div className="absolute bottom-40 right-10 w-12 h-12 bg-accent/5 rounded-full animate-float" style={{animationDelay: '0.5s'}}></div>
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-0">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
                     {/* Content Side */}
-                    <div className="text-center lg:text-left animate-fade-in-up">
+                    <div className="text-center lg:text-left animate-fade-in-up w-full overflow-hidden">
                         <div className="flex items-center justify-center lg:justify-start mb-6">
 
                         </div>
 
-                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight break-words w-full">
                             Páginas Web que
                             <span className="text-gradient block">Convierten Visitantes</span>
                             en Clientes
                         </h1>
 
-                        <p className="text-xl text-muted-foreground mb-8 max-w-2xl">
+                        <p className="text-xl text-muted-foreground mb-8 max-w-2xl break-words">
                             Creamos landing pages modernas, rápidas y optimizadas que se adaptan perfectamente a las necesidades de tu negocio. Diseño responsivo y enfoque en conversiones.
                         </p>
 
@@ -53,7 +53,7 @@ const LandingPagesHero = () => {
                     </div>
 
                     {/* Visual Side */}
-                    <div className="relative animate-fade-in-up" style={{animationDelay: '0.3s'}}>
+                    <div className="relative animate-fade-in-up w-full" style={{animationDelay: '0.3s'}}>
                         <div className="relative">
                             {/* Main mockup container */}
                             <div className="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-500">
