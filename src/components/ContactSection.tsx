@@ -6,17 +6,19 @@ import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { useToast } from '@/hooks/use-toast';
+import { ContactFormData } from '@/types/api';
+import { useContactForm } from '@/hooks/useContactForm';
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
     company: '',
     phone: '',
     message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
+  const { submitForm, isSubmitting, error, success, clearMessages } = useContactForm();
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,13 +30,14 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
+    clearMessages();
 
-    // Simulate form submission
-    setTimeout(() => {
+    const success = await submitForm(formData);
+
+    if (success) {
       toast({
-        title: "Message Sent Successfully!",
-        description: "We'll get back to you within 24 hours.",
+        title: "¡Mensaje enviado exitosamente!",
+        description: "Nos pondremos en contacto contigo dentro de 24 horas.",
       });
       setFormData({
         name: '',
@@ -43,8 +46,13 @@ const ContactSection = () => {
         phone: '',
         message: ''
       });
-      setIsSubmitting(false);
-    }, 1000);
+    } else {
+      toast({
+        title: "Error al enviar el mensaje",
+        description: error || "Por favor intenta de nuevo.",
+        variant: "destructive",
+      });
+    }
   };
 
   const contactInfo = [
@@ -175,7 +183,7 @@ const ContactSection = () => {
                   {isSubmitting ? (
                     <div className="flex items-center">
                       <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                      Sending...
+                      Enviando...
                     </div>
                   ) : (
                     <div className="flex items-center justify-center">
