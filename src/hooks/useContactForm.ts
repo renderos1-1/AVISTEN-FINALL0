@@ -20,7 +20,13 @@ export const useContactForm = () => {
         setSuccess(result.message);
         return true;
       } else {
-        setError(result.message || 'Error al enviar el mensaje');
+        // Handle validation errors specifically
+        if (result.errors && result.errors.length > 0) {
+          const errorMessages = result.errors.map(err => `${err.field}: ${err.message}`).join(', ');
+          setError(`${result.message}: ${errorMessages}`);
+        } else {
+          setError(result.message || 'Error al enviar el mensaje');
+        }
         return false;
       }
     } catch (error) {

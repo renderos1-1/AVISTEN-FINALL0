@@ -10,6 +10,7 @@ import WebDevelopment from "./pages/WebDevelopment";
 import ElectronicInvoicing from "./pages/ElectronicInvoicing";
 import ApiIntegration from "./pages/ApiIntegration";
 import NotFound from "./pages/NotFound";
+import BackendTest from "./components/BackendTest";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +29,7 @@ const App = () => (
                     {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                     <Route path="*" element={<NotFound />} />
                 </Routes>
+                <BackendTest />
             </BrowserRouter>
         </TooltipProvider>
     </QueryClientProvider>

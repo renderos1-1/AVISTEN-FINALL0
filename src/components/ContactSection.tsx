@@ -22,17 +22,54 @@ const ContactSection = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    
+    // Format phone number as user types
+    if (name === 'phone') {
+      // Remove all non-digits
+      const digits = value.replace(/\D/g, '');
+      
+      // Format as (XXX) XXX-XXXX or +1 (XXX) XXX-XXXX
+      let formattedPhone = '';
+      if (digits.length > 0) {
+        if (digits.length <= 3) {
+          formattedPhone = `(${digits}`;
+        } else if (digits.length <= 6) {
+          formattedPhone = `(${digits.slice(0, 3)}) ${digits.slice(3)}`;
+        } else if (digits.length <= 10) {
+          formattedPhone = `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
+        } else {
+          // Handle country code
+          formattedPhone = `+${digits.slice(0, 1)} (${digits.slice(1, 4)}) ${digits.slice(4, 7)}-${digits.slice(7, 11)}`;
+        }
+      }
+      
+      setFormData(prev => ({
+        ...prev,
+        [name]: formattedPhone
+      }));
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [name]: value
+      }));
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     clearMessages();
 
+    console.log('🔥 CONTACT FORM - Form data being submitted:', formData);
+    console.log('🔥 CONTACT FORM - Form validation check:');
+    console.log('  - Name:', formData.name ? '✅' : '❌ EMPTY');
+    console.log('  - Email:', formData.email ? '✅' : '❌ EMPTY');
+    console.log('  - Message:', formData.message ? '✅' : '❌ EMPTY');
+
     const success = await submitForm(formData);
+
+    console.log('🔥 CONTACT FORM - Submit result:', success);
+    console.log('🔥 CONTACT FORM - Error state:', error);
+    console.log('🔥 CONTACT FORM - Success state:', success);
 
     if (success) {
       toast({
@@ -154,7 +191,7 @@ const ContactSection = () => {
                       value={formData.phone}
                       onChange={handleInputChange}
                       className="w-full"
-                      placeholder=""
+                      placeholder="+1 (555) 123-4567"
                     />
                   </div>
                 </div>
